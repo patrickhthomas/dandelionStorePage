@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import { motion } from "framer-motion"
 
 
 
@@ -10,15 +10,19 @@ export default function Home() {
         <title>Dandelion</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="card">
-      <h1 className="primary title">Coming Soon</h1>
-      <h4 className="title-two">to downtown Vancouver</h4>
-      </div>
+      
 
-      <div className="card">
+      <div className="card hero">
         
         <img className="big-logo"src="assets/big-logo.svg" alt=""></img>
         <div className="blur"></div>
+      </div>
+
+      <div className="card titles">
+      <h2 className="primary title">Coming Soon</h2>
+      <h5 className="title-two"> to 109 West 7th Street</h5>
+      <h4 className="title-two">in downtown Vancouver</h4>
+      
       </div>
     
       <div className="card diamond">
@@ -41,43 +45,39 @@ export default function Home() {
       <div className="card b-1">
         <h4>Follow us</h4>
         <div className="follow">
-          <p>Facebook</p>
-          <p>Instagram</p>
+          <p><a href="https://www.facebook.com/dandelionteahouseapothecary/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+          <p><a href="https://www.instagram.com/dandelion.teahouse/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+          
+          
+
+          
         </div>
-        {/*FB logo link | IG logo link*/}
-      </div>
-      <div className="card b-1">
-       <h4>See us in the news</h4>
-       </div>
-      <div className="card b-1 news-container">
         
+      </div>
+
+       
+      <div className="card b-1 news-container">
+        <h4 className="drop-h">See us in the news</h4>
+        <a href="https://www.columbian.com/news/2020/aug/04/farmers-market-merchant-wins-40k-for-downtown-vancouver-store/"target="_blank" rel="noopener noreferrer">
         <div className="news">
           <div className="nl">
             <img src="/assets/news1.png" alt=""></img>
-            <h5>KOIN</h5>
+            <h5>The Columbian</h5>
             
           </div>
+          
           <div className="nr">
-            <h6>From farmers market to brick and mortar:</h6>
-            <p><small>Marianne Wilson Stein won a $40,000 community-sponsored grant...</small></p>
+            <h6>Farmers market merchant wins $40K</h6>
+            <p><small>A longtime farmers market merchant, is set to open downtown Vancouver’s only teahouse...</small></p>
           </div>
         </div>
+        </a>
+        
+        <a href="https://www.koin.com/am-extra/from-farmers-market-to-brick-and-mortar-vancouver-woman-wins-40k-grant-to-open-a-downtown-tea-house/"target="_blank" rel="noopener noreferrer">
         <div className="news">
           <div className="nl">
-            <img src="/assets/news1.png" alt=""></img>
-            <h5>KOIN</h5>
-            
-          </div>
-          <div className="nr">
-            <h6>From farmers market to brick and mortar:</h6>
-            <p><small>Marianne Wilson Stein won a $40,000 community-sponsored grant...</small></p>
-          </div>
-        </div>
-        <a href="">
-        <div className="news">
-          <div className="nl">
-            <img src="/assets/news1.png" alt=""></img>
-            <h5>KOIN</h5>
+            <img src="/assets/news2.png" alt=""></img>
+            <h5>Koin TV</h5>
             
           </div>
           
@@ -87,14 +87,16 @@ export default function Home() {
           </div>
         </div>
         </a>
+
+        
       </div>
       <div className="card b-1">
         <h4>Shop online</h4>
-        <p>Check out our products at <a href="https://www.giftsfromtheearth.com/">Gifts From the Earth</a></p>
+        <p>Check out our products at <a href="https://www.giftsfromtheearth.com/" target="_blank" rel="noopener noreferrer"><b>Gifts From the Earth</b></a></p>
       </div>
       <div className="card b-1">
         <h4>Get in touch</h4>
-        <p>Shoot us an <a href="info@dandelionteahouse.com">Email</a></p>
+        <p>Shoot us an <a href="mailto:info@dandelionteahouse.com>Email"><b>Email</b></a></p>
       </div>
       <div className="card"></div>
 

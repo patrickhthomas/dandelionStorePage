@@ -214,7 +214,22 @@ body {
 
 
 
+a {
+  color: $accent;
+  text-decoration: underline dotted 1px $accent;
+  
+  :hover {
+    color: $accent;
+    text-decoration: underline dotted 1px $secondary;
+    transition: .2s ease;
+    transform: scale(1.02);
+    
+  }
 
+  :active {
+    transform: scale(.98);
+  }
+}
 
 
 
@@ -244,13 +259,13 @@ h3 {
 h4 {
   font-family: 'Sonder Sans Black Rough';
   font-size: 24pt;
-  line-height: 120%;
+  line-height: 160%;
   letter-spacing: 1%;
 }
 
 h5 {
   font-family: 'Sonder Sans Rough';
-  font-size: 18pt;
+  font-size: 14pt;
   line-height: 100%;
   letter-spacing: -3%;
 }
@@ -271,7 +286,7 @@ b {
 
 p {
   font-family: 'Quicksand-Regular';
-  line-height: 120%;
+  line-height: 150%;
   font-size: 16pt;
   letter-spacing: -.2px;
 }
@@ -373,10 +388,7 @@ $light: #E5E2E9;
   box-sizing: border-box;
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
+
 
 a:hover {
   text-decoration: underline;

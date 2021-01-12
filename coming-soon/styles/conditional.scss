@@ -2,6 +2,8 @@
 
 
 .container {
+  padding-top:80px; 
+  padding-bottom: 80px;
   max-width: 100%;
   display: grid;
   margin: 0 auto;
@@ -36,6 +38,13 @@
     margin: 0 auto;
     grid-gap: 1rem;
     grid-template-rows: repeat(4, auto);
+    :hover {
+      text-decoration: none;
+      .news {
+        border: 3px solid $secondary;
+        background-color: white;
+      }
+    }
 
 }
 
@@ -55,14 +64,15 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 16px;
-  border-radius: 4%;
+  border-radius: 10px;
+  
 }
 
 .nl {
   margin-left: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  border: 2px solid $secondary-lt;
+  
   border-radius: 7%;
   overflow: hidden;
 }
@@ -140,6 +150,7 @@ img.btm {
   height: 4px;
   background-color: $primary;
   margin: 10px auto;
+  border-radius: 100px;
 }
 
 .big-logo {
@@ -154,6 +165,8 @@ img.btm {
   position: relative;
   z-index: 2;
 }
+
+
 
 .blur {
   height: 600px;
@@ -179,21 +192,45 @@ img.btm {
   z-index: 0;
 }
 
+.follow img {
+  width: 150px;
+}
 
+.nl h5 {
+  font-size: 10pt;
+  max-width: 90%;
+  margin-top: 20px;
+  margin: auto;
+}
 
 
 @media (min-width: 600px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .diamond {
+    grid-row: 2/9;
   }
 
   .title,
   .title-two {
     text-align: left;
+    padding-top: 24px;
+  }
+
+  .titles {
+    place-self: end;
+    max-width: 90%;
   }
 
   .big-logo {
     margin-top: 48px;
+  }
+
+  .blur,
+  .blur2 {
+    display: none;
   }
 
 }
@@ -203,8 +240,41 @@ img.btm {
     grid-template-columns: repeat(2, .5fr, 1fr);
   }
 
+  .diamond {
+    grid-row: 2/9;
+  }
+
   .big-logo {
     margin-top: 48px;
   }
 
+  .titles {
+    place-self: start;
+    margin-left: 10%;
+    max-width: 60%;
+  }
+
+  .news-container {
+    h6 {
+      font-size: 20pt;
+    }
+    
+  }
+
+  .blur, .blur2 {
+    display: none;
+  }
+
+  .drop-h {
+
+  }
+
+  .card.hero {
+    grid-column: 1/3;
+    max-width: 800px;
+    margin: auto;
+  }
+
 }
+
+
