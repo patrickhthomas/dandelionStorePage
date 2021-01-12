@@ -1,65 +1,70 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+
+
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Dandelion</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="card">
+      <h1 className="primary title">Coming Soon</h1>
+      <h4 className="title-two">to downtown Vancouver</h4>
+      </div>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="card">
+        <img className="big-logo"src="assets/big-logo.svg" alt=""></img>
+        <div className="blur"></div>
+      </div>
+    
+      <div className="card diamond">
+        <img className="d-end" src="assets/mobile/top.png" alt=""/>
+        <img className="tr" src="assets/mobile/top-right.png" alt="" />
+        <img className="tl" src="assets/mobile/top-left.png" alt="" />
+        <h4 className="rel">Premium Teas</h4>
+        <span className="break"></span>
+        <h4 className="rel">Natural Bodycare</h4>
+        <img className="br" src="assets/mobile/bottom-right.png" alt="" />
+        <img className="bl" src="assets/mobile/bottom-left.png" alt="" />
+        <img className="btm" src="assets/mobile/bottom.png" alt="" />
+        
+      </div>
+    
+      <div className="card b-1">
+        <p>We’re not quite ready to announce a grand opening date, but we’ll post all the details on this page as soon as we are! Until then, there are a few things you can do to make sure you stay in loop.</p>
+      </div>
+      <div className="card b-1">
+        <h4>Follow us on social media</h4>
+        {/*FB logo link | IG logo link*/}
+      </div>
+      <div className="card b-1 news-container">
+        <h4>Read about us in the news</h4>
+        <div className="news">
+          <div>
+            <img src="/assets/news1.png" alt=""></img>
+            <h4>KOIN</h4>
+            
+          </div>
+          <div>
+            <h4></h4>
+          </div>
         </div>
-      </main>
+        <div className="news"></div>
+        <div className="news"></div>
+      </div>
+      <div className="card b-1">
+        <h4>Shop online</h4>
+        <button></button>
+      </div>
+      <div className="card b-1">
+        <h4>Get in touch</h4>
+        <button></button>
+      </div>
+      <div className="card"></div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
