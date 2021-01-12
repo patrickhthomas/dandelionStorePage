@@ -9,16 +9,18 @@
   grid-template-rows: repeat(4, auto);
 }
 
-.card {}
+.card {
+  position: relative;
+}
 
 .title,
 .title-two {
+  position: relative;
   text-align: center;
+  z-index: 3;
 }
 
-.title-two {
-  margin-top: -40px;
-}
+
 
 .b-1>p,
 .b-1>h1,
@@ -37,15 +39,44 @@
 
 }
 
+.follow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
 .news {
   width: 90%;
   margin: auto;
   height: auto;
-  background-color: $lighter;
+  background-color: $white-tr;
   backdrop-filter: blur(2px);
-  border: 3px solid $secondary;
+  border: 3px solid $secondary-lt;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-gap: 16px;
+  border-radius: 4%;
+}
+
+.nl {
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: 2px solid $secondary-lt;
+  border-radius: 7%;
+  overflow: hidden;
+}
+
+.nl h5 {
+  margin-top: 16px;
+  display: block;
+  text-align: center;
+}
+
+.nr {
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
 }
 
 .news img {
@@ -64,6 +95,11 @@
 .diamond .d-end {
   width: 100%;
   display: block;
+}
+
+.diamond {
+  margin-bottom: -180px;
+  z-index: 0;
 }
 
 .tr {
@@ -114,6 +150,11 @@ img.btm {
   z-index: 2;
 }
 
+.card p {
+  position: relative;
+  z-index: 2;
+}
+
 .blur {
   height: 600px;
   width: 100%;
@@ -123,6 +164,18 @@ img.btm {
   filter: blur(40px);
   position: absolute;
   margin-top: -120%;
+  z-index: 1;
+}
+
+.blur2 {
+  height: 300px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 100%;
+  filter: blur(40px);
+  position: absolute;
+  margin-top: -20%;
   z-index: 0;
 }
 

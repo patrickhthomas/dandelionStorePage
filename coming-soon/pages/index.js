@@ -16,6 +16,7 @@ export default function Home() {
       </div>
 
       <div className="card">
+        
         <img className="big-logo"src="assets/big-logo.svg" alt=""></img>
         <div className="blur"></div>
       </div>
@@ -34,34 +35,66 @@ export default function Home() {
       </div>
     
       <div className="card b-1">
+        <div className="blur2"></div>
         <p>We’re not quite ready to announce a grand opening date, but we’ll post all the details on this page as soon as we are! Until then, there are a few things you can do to make sure you stay in loop.</p>
       </div>
       <div className="card b-1">
-        <h4>Follow us on social media</h4>
+        <h4>Follow us</h4>
+        <div className="follow">
+          <p>Facebook</p>
+          <p>Instagram</p>
+        </div>
         {/*FB logo link | IG logo link*/}
       </div>
+      <div className="card b-1">
+       <h4>See us in the news</h4>
+       </div>
       <div className="card b-1 news-container">
-        <h4>Read about us in the news</h4>
+        
         <div className="news">
-          <div>
+          <div className="nl">
             <img src="/assets/news1.png" alt=""></img>
-            <h4>KOIN</h4>
+            <h5>KOIN</h5>
             
           </div>
-          <div>
-            <h4></h4>
+          <div className="nr">
+            <h6>From farmers market to brick and mortar:</h6>
+            <p><small>Marianne Wilson Stein won a $40,000 community-sponsored grant...</small></p>
           </div>
         </div>
-        <div className="news"></div>
-        <div className="news"></div>
+        <div className="news">
+          <div className="nl">
+            <img src="/assets/news1.png" alt=""></img>
+            <h5>KOIN</h5>
+            
+          </div>
+          <div className="nr">
+            <h6>From farmers market to brick and mortar:</h6>
+            <p><small>Marianne Wilson Stein won a $40,000 community-sponsored grant...</small></p>
+          </div>
+        </div>
+        <a href="">
+        <div className="news">
+          <div className="nl">
+            <img src="/assets/news1.png" alt=""></img>
+            <h5>KOIN</h5>
+            
+          </div>
+          
+          <div className="nr">
+            <h6>From farmers market to brick and mortar:</h6>
+            <p><small>Marianne Wilson Stein won a $40,000 community-sponsored grant...</small></p>
+          </div>
+        </div>
+        </a>
       </div>
       <div className="card b-1">
         <h4>Shop online</h4>
-        <button></button>
+        <p>Check out our products at <a href="https://www.giftsfromtheearth.com/">Gifts From the Earth</a></p>
       </div>
       <div className="card b-1">
         <h4>Get in touch</h4>
-        <button></button>
+        <p>Shoot us an <a href="info@dandelionteahouse.com">Email</a></p>
       </div>
       <div className="card"></div>
 
