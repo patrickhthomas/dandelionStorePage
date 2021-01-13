@@ -202,8 +202,11 @@ table {
 
 html,
 body {
-  background: url("/assets/bg1.svg"), $light;
-  background-size: 70%;
+  background: url("/assets/bg1.svg"),
+  $light;
+  background-size: 50%;
+  
+  
   padding: 0;
   margin: 0;
   width: 100%;
@@ -213,6 +216,7 @@ body {
   box-sizing: border-box;
   max-width: 1000px;
   margin: auto;
+  
 }
 
 

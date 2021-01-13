@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Iframe from 'react-iframe'
 import { motion } from "framer-motion"
 
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Head>
         <title>Dandelion</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-9ZfPnbegQSumzaE7mks2IYgHoayLtuto3AS6ieArECeaR8nCfliJVuLh/GaQ1gyM" crossorigin="anonymous"></link>
       </Head>
       
 
@@ -20,9 +22,18 @@ export default function Home() {
 
       <div className="card titles">
       <h2 className="primary title">Coming Soon</h2>
-      <h5 className="title-two"> to 109 West 7th Street</h5>
-      <h4 className="title-two">in downtown Vancouver</h4>
+      <h5 className="title-two">109 West 7th Street</h5>
+      <h4 className="title-two">downtown Vancouver</h4>
       
+      
+      </div>
+      <div className="card map">
+        <Iframe url="https://snazzymaps.com/embed/284664"
+              width="100%"
+              height="300px"
+              styles={{border: "none"}}
+              loading="loading"
+              />
       </div>
     
       <div className="card diamond">
@@ -45,9 +56,16 @@ export default function Home() {
       <div className="card b-1">
         <h4>Follow us</h4>
         <div className="follow">
-          <p><a href="https://www.facebook.com/dandelionteahouseapothecary/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
-          <p><a href="https://www.instagram.com/dandelion.teahouse/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-          
+          <div>
+          <a href="https://www.facebook.com/dandelionteahouseapothecary/" target="_blank" rel="noopener noreferrer"><p>Facebook</p>
+          <i class="fab fa-facebook-square"></i>
+          </a>
+          </div>
+          <div>
+          <a href="https://www.instagram.com/dandelion.teahouse/" target="_blank" rel="noopener noreferrer"><p>Instagram</p>
+          <i class="fab fa-instagram"></i>
+          </a>
+          </div>
           
 
           
