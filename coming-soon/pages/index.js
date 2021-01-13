@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Dandelion</title>
+        <title>Dandelion Teahouse and Apothecary</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-9ZfPnbegQSumzaE7mks2IYgHoayLtuto3AS6ieArECeaR8nCfliJVuLh/GaQ1gyM" crossorigin="anonymous"></link>
       </Head>
@@ -19,11 +19,15 @@ export default function Home() {
         <img className="big-logo"src="assets/big-logo.svg" alt=""></img>
         <div className="blur"></div>
       </div>
+      
 
       <div className="card titles">
+      
       <h2 className="primary title">Coming Soon</h2>
-      <h5 className="title-two">109 West 7th Street</h5>
-      <h4 className="title-two">downtown Vancouver</h4>
+      <h4 className="title-two">A community Teahouse and Apothecary</h4>
+      <h5 className="title-two">109 West 7th Street<br></br>downtown Vancouver, WA
+      </h5>
+      
       
       
       </div>
