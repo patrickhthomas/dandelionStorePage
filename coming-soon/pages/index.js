@@ -16,7 +16,7 @@ export default function Home() {
 
       <div className="card hero">
         
-        <img className="big-logo"src="assets/big-logo.svg" alt=""></img>
+        <img className="big-logo"src="largeLogoDarkBackground.png" alt=""></img>
         <div className="blur"></div>
       </div>
       
